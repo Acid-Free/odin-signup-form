@@ -10,7 +10,46 @@
 </head>
 
 <body>
-
+  <div class="background-div">
+    <div class="logo-div">
+      <img src="assets/bread-svgrepo-com.svg" alt="An image of bread">
+      <p>Nice Bread</p>
+    </div>
+  </div>
+  <div class="content-div">
+    <div class="message-div">
+      <p>We sell nice bread! Toasted on the outside, fluffy on the inside! Our bread is good. Please buy our bread...
+      </p>
+      <p>Bread.</p>
+    </div>
+    <div class="form-div">
+      <p>Reserve your bread.</p>
+      <form id="main-form" action="#" method="post">
+        <label for="first-name">First Name</label>
+        <input type="text" name="first-name" id="first-name" required list="first-names" autocomplete="off">
+        <label for="last-name">Last Name</label>
+        <input type="text" name="last-name" id="last-name" required>
+        <label for="email">Email</label>
+        <input type="email" name="email" id="email" required>
+        <label for="phone-number">Phone Number</label>
+        <input type="number" name="phone-number" id="phone-number">
+        <label for="password">Password</label>
+        <input type="password" name="password" id="password" required>
+        <label for="password-confirm">Confirm Password</label>
+        <input type="password" name="password-confirm" id="password-confirm" required>
+      </form>
+      <datalist id="first-names">
+        <option>Bob</option>
+        <option>John</option>
+        <option>Mark</option>
+        <option>Martha</option>
+      </datalist>
+    </div>
+    <div class="create-account-div">
+      <button type="submit" form="main-form">Create Account</button>
+      <p>Already have an account? <a href="#">Log in</a> </p>
+    </div>
+  </div>
 </body>
 
 </html>
