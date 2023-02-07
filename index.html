@@ -12,8 +12,11 @@
 <body>
   <div class="background-div">
     <div class="logo-div">
-      <img src="assets/bread-svgrepo-com.svg" alt="An image of bread">
-      <p>Nice Bread</p>
+      <img class="icon" src="assets/bread-svgrepo-com.svg" alt="An image of bread">
+      <p>&#60;== Bread</p>
+    </div>
+    <div class="attribution">
+      <p>Photo by Duncan Kidd on Unsplash</p>
     </div>
   </div>
   <div class="content-div">
@@ -25,18 +28,30 @@
     <div class="form-div">
       <p>Reserve your bread.</p>
       <form id="main-form" action="#" method="post">
-        <label for="first-name">First Name</label>
-        <input type="text" name="first-name" id="first-name" required list="first-names" autocomplete="off">
-        <label for="last-name">Last Name</label>
-        <input type="text" name="last-name" id="last-name" required>
-        <label for="email">Email</label>
-        <input type="email" name="email" id="email" required>
-        <label for="phone-number">Phone Number</label>
-        <input type="number" name="phone-number" id="phone-number">
-        <label for="password">Password</label>
-        <input type="password" name="password" id="password" required>
-        <label for="password-confirm">Confirm Password</label>
-        <input type="password" name="password-confirm" id="password-confirm" required>
+        <p>
+          <label for="first-name">First Name</label>
+          <input type="text" name="first-name" id="first-name" required list="first-names" autocomplete="off">
+        </p>
+        <p>
+          <label for="last-name">Last Name</label>
+          <input type="text" name="last-name" id="last-name" required>
+        </p>
+        <p>
+          <label for="email">Email</label>
+          <input type="email" name="email" id="email" required>
+        </p>
+        <p>
+          <label for="phone-number">Phone Number</label>
+          <input type="tel" name="phone-number" id="phone-number">
+        </p>
+        <p>
+          <label for="password">Password</label>
+          <input type="password" name="password" id="password" required>
+        </p>
+        <p>
+          <label for="password-confirm">Confirm Password</label>
+          <input type="password" name="password-confirm" id="password-confirm" required>
+        </p>
       </form>
       <datalist id="first-names">
         <option>Bob</option>
