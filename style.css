@@ -3,9 +3,19 @@
   src: url(assets/Norse-Bold.otf);
 }
 
+@font-face {
+  font-family: rough-bread;
+  src: url(assets/bread-rough.otf);
+}
+
+@font-face {
+  font-family: bread;
+  src: url(assets/bread.otf);
+}
+
 :root {
   --light-font-color: #eeeeee;
-  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  font-family: bread, Verdana, Geneva, Tahoma, sans-serif;
 }
 
 * {
@@ -27,7 +37,7 @@ body {
 }
 
 .logo-div > p {
-  font-family: norse-bold-font;
+  font-family: rough-bread;
   font-size: 3rem;
   color: var(--light-font-color);
 }
@@ -63,10 +73,15 @@ body {
 
 .message-div {
   background-color: #fbfbfb;
-  padding: 30px;
+  padding: 10px 30px;
   display: flex;
   flex-direction: column;
   justify-content: flex-end;
+}
+
+.message-div > p {
+  margin: 20px 0px;
+  font-size: 30px;
 }
 
 .form-div {
@@ -79,7 +94,12 @@ body {
 }
 
 .form-div > p {
-  font-size: 22px;
+  font-size: 25px;
+}
+
+.form-div > p > span,
+.message-div > p > span {
+  font-weight: 800;
 }
 
 .form-div > form {
@@ -94,6 +114,10 @@ body {
   display: flex;
   flex-direction: column;
   font-size: 18px;
+}
+
+.form-div > form > p > label {
+  font-size: 0.8rem;
 }
 
 .create-account-div {
@@ -114,6 +138,7 @@ body {
 }
 
 button {
+  font: 1em bread, sans-serif;
   padding: 10px 30px;
   border-radius: 10px;
   border: 2px solid burlywood;
@@ -126,11 +151,12 @@ button:hover {
   filter: brightness(90%);
 }
 
-button:focus {
+button:active {
   filter: brightness(80%);
 }
 
 input {
+  font: 1em bread, sans-serif;
   padding: 10px;
   margin-top: 2px;
   border: 2px solid #eeeeee;
@@ -146,4 +172,12 @@ input[type="password"]:invalid {
   visibility: hidden;
   font-size: 12px;
   color: red;
+}
+
+:link {
+  color: burlywood;
+}
+
+:visited {
+  color: burlywood;
 }
