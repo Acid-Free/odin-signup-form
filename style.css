@@ -143,6 +143,7 @@ input[type="password"]:invalid {
 }
 
 .password-match-indicator {
+  visibility: hidden;
   font-size: 12px;
   color: red;
 }
